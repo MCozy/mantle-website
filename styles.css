@@ -1,0 +1,203 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1E2D3A;
+  background: #F0F4F1;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+
+/* ===== Typography ===== */
+h1, h2, h3, h4 { font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; line-height: 1.2; }
+h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+h3 { font-size: clamp(1.125rem, 2vw, 1.375rem); }
+p { color: #3D5A6E; }
+em { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; }
+
+/* ===== Layout ===== */
+.container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+section { padding: 80px 0; }
+@media (max-width: 768px) { section { padding: 56px 0; } }
+
+/* ===== Nav ===== */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(30,45,58,0.08);
+}
+.nav .container {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.nav-logo {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.5rem; color: #1E2D3A;
+}
+.nav-logo span { color: #6B9E78; }
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 24px; border-radius: 10px;
+  font-family: 'Inter', sans-serif; font-size: 0.9375rem; font-weight: 600;
+  transition: all 0.2s ease; cursor: pointer; border: none;
+  text-decoration: none;
+}
+.btn-primary { background: #6B9E78; color: #fff; }
+.btn-primary:hover { background: #5A8B66; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(107,158,120,0.3); }
+.btn-outline { background: transparent; color: #6B9E78; border: 2px solid #6B9E78; }
+.btn-outline:hover { background: #6B9E78; color: #fff; }
+.btn-sm { padding: 8px 16px; font-size: 0.875rem; border-radius: 8px; }
+.btn-dark { background: #1E2D3A; color: #fff; }
+.btn-dark:hover { background: #2A3F50; }
+.btn .apple-icon { font-size: 1.1em; }
+
+/* ===== Hero ===== */
+.hero { padding: 80px 0 60px; background: #F0F4F1; }
+.hero .container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.hero-label {
+  display: inline-block; font-size: 0.8125rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: #6B9E78; margin-bottom: 16px;
+}
+.hero h1 { margin-bottom: 20px; color: #1E2D3A; }
+.hero p { font-size: 1.125rem; color: #3D5A6E; margin-bottom: 32px; max-width: 480px; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.hero-actions .see-features { color: #6B9E78; font-weight: 600; font-size: 0.9375rem; }
+.hero-actions .see-features:hover { text-decoration: underline; }
+.hero-visual {
+  background: linear-gradient(135deg, #dce8df 0%, #b8cebb 100%);
+  border-radius: 20px; aspect-ratio: 4/5; max-height: 520px;
+  display: flex; align-items: center; justify-content: center;
+  color: #6B9E78; font-size: 0.875rem; font-weight: 500;
+}
+@media (max-width: 768px) {
+  .hero .container { grid-template-columns: 1fr; text-align: center; }
+  .hero p { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
+  .hero-visual { max-height: 360px; margin: 0 auto; max-width: 300px; }
+}
+
+/* ===== Features ===== */
+.features { background: #fff; }
+.features .section-header { text-align: center; max-width: 600px; margin: 0 auto 48px; }
+.features .section-header p { margin-top: 12px; font-size: 1.0625rem; }
+.feature-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.feature-card {
+  background: #F0F4F1; border-radius: 16px; padding: 32px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(30,45,58,0.08); }
+.feature-icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  background: #fff; display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; margin-bottom: 16px;
+}
+.feature-card h3 { margin-bottom: 8px; }
+.feature-card p { font-size: 0.9375rem; }
+@media (max-width: 900px) { .feature-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .feature-grid { grid-template-columns: 1fr; } }
+
+/* ===== How It Works ===== */
+.how-it-works { background: #F0F4F1; }
+.how-it-works .section-header { text-align: center; margin-bottom: 56px; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.step { text-align: center; }
+.step-number {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 3rem; color: #6B9E78; opacity: 0.35;
+  line-height: 1; margin-bottom: 16px;
+}
+.step h3 { margin-bottom: 8px; }
+.step p { font-size: 0.9375rem; max-width: 300px; margin: 0 auto; }
+@media (max-width: 600px) { .steps { grid-template-columns: 1fr; gap: 32px; } }
+
+/* ===== CTA Section ===== */
+.cta-section {
+  background: #1E2D3A; color: #fff; text-align: center;
+}
+.cta-section h2 { color: #fff; margin-bottom: 12px; }
+.cta-section p { color: rgba(255,255,255,0.7); margin-bottom: 32px; font-size: 1.0625rem; }
+
+/* ===== Footer ===== */
+.footer {
+  background: #F0F4F1; border-top: 1px solid rgba(30,45,58,0.1);
+  padding: 40px 0;
+}
+.footer .container {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+}
+.footer-logo {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.25rem; color: #1E2D3A;
+}
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { font-size: 0.875rem; color: #3D5A6E; }
+.footer-links a:hover { color: #6B9E78; }
+.footer-copy { font-size: 0.8125rem; color: #3D5A6E; width: 100%; text-align: center; margin-top: 16px; }
+
+/* ===== Legal / Support Pages ===== */
+.page-header {
+  padding: 48px 0 32px; background: #fff; text-align: center;
+  border-bottom: 1px solid rgba(30,45,58,0.06);
+}
+.page-header p { margin-top: 8px; font-size: 1.0625rem; }
+.page-body { background: #F0F4F1; padding: 48px 0 80px; }
+.page-content { max-width: 760px; margin: 0 auto; }
+
+/* Legal prose */
+.legal h2 { font-size: 1.375rem; margin: 40px 0 12px; padding-top: 8px; }
+.legal h2:first-child { margin-top: 0; }
+.legal p, .legal li { font-size: 0.9375rem; color: #3D5A6E; margin-bottom: 12px; }
+.legal ul { padding-left: 20px; margin-bottom: 16px; }
+.legal ul li { list-style: disc; margin-bottom: 6px; }
+.legal ol { padding-left: 20px; margin-bottom: 16px; }
+.legal ol li { list-style: decimal; margin-bottom: 6px; }
+.legal .effective { font-size: 0.875rem; color: #6B9E78; font-weight: 600; margin-bottom: 24px; }
+.legal .caps { text-transform: uppercase; }
+.legal a { color: #6B9E78; text-decoration: underline; }
+
+/* ===== FAQ / Accordion ===== */
+.faq-group { margin-bottom: 36px; }
+.faq-group-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.25rem; margin-bottom: 12px; color: #1E2D3A;
+}
+.faq-item {
+  background: #fff; border-radius: 12px; margin-bottom: 8px;
+  overflow: hidden;
+}
+.faq-item summary {
+  padding: 16px 20px; cursor: pointer;
+  font-weight: 600; font-size: 0.9375rem; color: #1E2D3A;
+  list-style: none; display: flex; align-items: center; justify-content: space-between;
+  transition: background 0.15s;
+}
+.faq-item summary:hover { background: rgba(107,158,120,0.06); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+'; font-size: 1.25rem; color: #6B9E78; font-weight: 400;
+  transition: transform 0.2s;
+}
+.faq-item[open] summary::after { content: '\2212'; }
+.faq-item .faq-answer {
+  padding: 0 20px 16px; font-size: 0.9375rem; color: #3D5A6E; line-height: 1.6;
+}
+.faq-item .faq-answer a { color: #6B9E78; text-decoration: underline; }
+
+/* ===== Contact CTA ===== */
+.contact-cta {
+  text-align: center; padding: 48px 32px; margin-top: 24px;
+  background: #fff; border-radius: 16px;
+}
+.contact-cta h3 { margin-bottom: 8px; }
+.contact-cta p { margin-bottom: 20px; }
