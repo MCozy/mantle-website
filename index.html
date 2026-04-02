@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mantle - Your home, maintained.</title>
-  <meta name="description" content="Mantle is a free AI-powered home maintenance tracker for iOS. Get a personalized schedule, track tasks, and keep your home in great shape.">
+  <title>Mantle — Your home, maintained.</title>
+  <meta name="description" content="Mantle is a free AI-powered home maintenance app for iOS. Get a personalized schedule for your home's unique systems. Know exactly what to do, when to do it, and who to call.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,146 +12,171 @@
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav class="nav">
+  <nav class="nav" id="main-nav">
     <div class="container">
-      <a href="index.html" class="nav-logo">Mantle</a>
-      <a href="https://apps.apple.com" class="btn btn-primary btn-sm">
-        <span class="apple-icon">&#63743;</span> Download for iOS
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <span class="nav-logo-text">Mantle</span>
       </a>
+      <div class="nav-badge">
+        <a href="https://apps.apple.com/us/app/mantle-home-maintenance/id6744053478">
+          <img src="appstore-badge.svg" alt="Download on the App Store">
+        </a>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero -->
   <section class="hero">
+    <div class="hero-blob-1"></div>
+    <div class="hero-blob-2"></div>
     <div class="container">
       <div class="hero-text">
-        <span class="hero-label">Home Maintenance Tracker</span>
-        <h1>Your home, <em>maintained.</em></h1>
-        <p>Mantle uses AI to build a personalized maintenance schedule for your home. Know exactly what to do, when to do it, and why it matters &mdash; so nothing falls through the cracks.</p>
-        <div class="hero-actions">
-          <a href="https://apps.apple.com" class="btn btn-primary">
-            <span class="apple-icon">&#63743;</span> Download on the App Store
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          Available now on iOS
+        </div>
+        <h1>Your home,<br><em>maintained.</em></h1>
+        <p class="hero-desc">The AI-powered schedule for your home's unique systems. Know exactly what to do, when to do it, and who to call.</p>
+        <div class="hero-badge">
+          <a href="https://apps.apple.com/us/app/mantle-home-maintenance/id6744053478">
+            <img src="appstore-badge.svg" alt="Download on the App Store">
           </a>
-          <a href="#features" class="see-features">See Features &darr;</a>
+        </div>
+        <div class="hero-trust">
+          <span><span class="hero-trust-icon">&#10003;</span> Personalized to your address</span>
+          <span><span class="hero-trust-icon">&#10003;</span> Free &middot; US Only</span>
         </div>
       </div>
-      <div class="hero-visual">
-        App screenshots coming soon
+      <div class="hero-phones">
+        <div class="phone-shot hero-phone-back">
+          <img src="screen-schedule.png" alt="Mantle maintenance schedule">
+        </div>
+        <div class="phone-shot hero-phone-front">
+          <img src="screen-dashboard.png" alt="Mantle dashboard">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="features" id="features">
+  <section class="feature-section bg-white" id="features">
+    <div class="container">
+      <div class="feature-split">
+        <div class="feature-phones">
+          <div class="phone-shot feature-phone-back">
+            <img src="screen-address.png" alt="Add your home address">
+          </div>
+          <div class="phone-shot feature-phone-front">
+            <img src="screen-setup.png" alt="Personalize your home systems">
+          </div>
+        </div>
+        <div class="feature-copy">
+          <div class="feature-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A7C6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h2>Generated for your home's DNA.</h2>
+          <p class="feature-desc">Enter your address and Mantle analyzes your home's age, location, and systems to build a precise maintenance calendar. Never wonder what you should be doing again.</p>
+          <ul class="feature-list">
+            <li class="feature-list-item"><span class="feature-list-bullet"></span><span>Predicts tasks based on home age and local climate</span></li>
+            <li class="feature-list-item"><span class="feature-list-bullet"></span><span>Filters by category: HVAC, Plumbing, Exterior &amp; more</span></li>
+            <li class="feature-list-item"><span class="feature-list-bullet"></span><span>Prioritizes critical seasonal prep automatically</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-section bg-dark">
+    <div class="container">
+      <div class="feature-split">
+        <div class="feature-copy">
+          <div class="feature-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h2>DIY or go with a pro?</h2>
+          <p class="feature-desc">Save your trusted contractors right where you manage the tasks. When a job is too big to DIY, reach out to your preferred pro with one tap.</p>
+          <div class="pro-card">
+            <div class="pro-card-title">Why it's better</div>
+            <div class="pro-card-rows">
+              <div class="pro-card-row"><span class="pro-card-icon">&#128222;</span> Call directly from a maintenance task</div>
+              <div class="pro-card-row"><span class="pro-card-icon">&#128205;</span> Categorized by specialty (Plumber, Electrician, etc.)</div>
+              <div class="pro-card-row"><span class="pro-card-icon">&#128737;</span> Shared securely with everyone in your household</div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-phones">
+          <div class="phone-shot feature-phone-back">
+            <img src="screen-taskdetail.png" alt="Task detail view">
+          </div>
+          <div class="phone-shot feature-phone-front">
+            <img src="screen-procontact.png" alt="Pro contact screen">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="household-section">
     <div class="container">
       <div class="section-header">
-        <h2>Everything you need to become a better <em>homeowner</em></h2>
-        <p>Mantle takes the guesswork out of home upkeep with smart scheduling, detailed guidance, and tools to keep your whole household on the same page.</p>
+        <div class="household-icon-wrap">&#127968;</div>
+        <h2>Manage multiple homes.<br>Share with everyone.</h2>
+        <p>Whether it's your primary residence, a vacation property, or an aging parent's home, manage them all from one account. Invite your partner or roommates to share the load.</p>
       </div>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="feature-icon">&#10024;</div>
-          <h3>AI-Powered Schedule</h3>
-          <p>Get a personalized maintenance plan based on your home's age, location, climate, and installed systems.</p>
+      <div class="household-cards">
+        <div class="household-card">
+          <div class="household-card-icon">&#127969;</div>
+          <h3>Multi-Property Support</h3>
+          <p>Switch seamlessly between your primary home, rental properties, or family homes. Each has its own distinct schedule.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">&#128203;</div>
-          <h3>Task Details</h3>
-          <p>Every task includes why it matters, step-by-step instructions, supplies needed, and time and cost estimates.</p>
+        <div class="household-card">
+          <div class="household-card-icon green">&#128101;</div>
+          <h3>Household Invites</h3>
+          <p>Add spouses, roommates, or property managers. Everyone stays in sync on what needs to be done and when.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">&#128101;</div>
-          <h3>Professional Contacts</h3>
-          <p>Save your trusted contractors, plumbers, and electricians. Assign them to tasks so you always know who to call.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">&#128106;</div>
-          <h3>Household Sharing</h3>
-          <p>Invite family members to your home. Everyone can view tasks, mark them complete, and track who did what.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">&#128276;</div>
-          <h3>Smart Notifications</h3>
-          <p>Receive a weekly digest of upcoming tasks and day-of reminders so nothing sneaks up on you.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">&#127968;</div>
-          <h3>Multiple Homes</h3>
-          <p>Manage a vacation home, rental property, or your parents' house. Each home gets its own schedule and team.</p>
+        <div class="household-card">
+          <div class="household-card-icon">&#128276;</div>
+          <h3>Shared Notifications</h3>
+          <p>When a critical task is due, everyone gets notified. No more miscommunication about who changed the filter last.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section class="gallery">
-    <div class="container">
-      <div class="gallery-header">
-        <span class="gallery-rule"></span>
-        <span class="gallery-label">GALLERY</span>
-        <span class="gallery-rule"></span>
-      </div>
-      <h2 class="gallery-title">See it in action</h2>
-      <div class="gallery-scroll">
-        <div class="gallery-placeholder">Screenshot 1</div>
-        <div class="gallery-placeholder">Screenshot 2</div>
-        <div class="gallery-placeholder">Screenshot 3</div>
-        <div class="gallery-placeholder">Screenshot 4</div>
-        <div class="gallery-placeholder">Screenshot 5</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- How It Works -->
-  <section class="how-it-works">
-    <div class="container">
-      <div class="section-header">
-        <h2>How it works</h2>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">01</div>
-          <h3>Tell us about your home</h3>
-          <p>Enter your address, the year it was built, and the systems installed &mdash; HVAC, water heater, appliances, and more.</p>
-        </div>
-        <div class="step">
-          <div class="step-number">02</div>
-          <h3>Get your personalized schedule</h3>
-          <p>Our AI analyzes your home details and generates a maintenance calendar tailored to your property.</p>
-        </div>
-        <div class="step">
-          <div class="step-number">03</div>
-          <h3>Stay on top of maintenance</h3>
-          <p>Complete tasks, skip what doesn't apply, reschedule when life gets busy, and invite your household to help.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
   <section class="cta-section">
     <div class="container">
-      <h2>Take control of your <em>home maintenance</em></h2>
-      <p>Free for iOS. Set up in 1 minute. No subscription required.</p>
-      <a href="https://apps.apple.com" class="btn btn-primary" style="background:#6B9E78;">
-        <span class="apple-icon">&#63743;</span> Download on the App Store
-      </a>
+      <h2>Stop guessing.<br>Start maintaining.</h2>
+      <p>Protect your biggest investment and become a better homeowner with Mantle.</p>
+      <div class="cta-badge">
+        <a href="https://apps.apple.com/us/app/mantle-home-maintenance/id6744053478">
+          <img src="appstore-badge.svg" alt="Download on the App Store">
+        </a>
+      </div>
+      <p class="cta-note">Free to download &middot; US Only</p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-logo">Mantle</div>
+      <div class="footer-logo">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Mantle
+      </div>
       <div class="footer-links">
-        <a href="support.html">Support</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
       </div>
-      <p class="footer-copy">&copy; 2026 Mantle. All rights reserved.</p>
+      <div class="footer-copy">&copy; 2026 Mantle Inc. All rights reserved.</div>
     </div>
   </footer>
 
+  <script>
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
 </body>
 </html>
