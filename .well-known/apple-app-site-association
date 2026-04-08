@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["7ZP5N42B88.com.trymantle.app"],
+        "paths": ["/invite*"]
+      }
+    ]
+  }
+}
