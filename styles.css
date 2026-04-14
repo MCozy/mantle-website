@@ -48,9 +48,9 @@ em { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; color:
   display: flex; align-items: center; justify-content: center;
 }
 .nav-logo-icon img { width: 32px; height: 32px; display: block; }
-.nav-icon-dark { display: none; }
-.nav.scrolled .nav-icon-light { display: none; }
-.nav.scrolled .nav-icon-dark { display: block; }
+.nav-logo-icon .nav-icon-dark { display: none; }
+.nav.scrolled .nav-logo-icon .nav-icon-light { display: none; }
+.nav.scrolled .nav-logo-icon .nav-icon-dark { display: block; }
 .nav-logo-text {
   font-family: 'DM Serif Display', Georgia, serif;
   font-size: 1.375rem; color: #1E2D3A;
