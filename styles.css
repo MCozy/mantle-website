@@ -404,10 +404,10 @@ em { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; color:
 
 
 /* Google Play visible-size adjustment */
-.nav-badge img[alt="Get it on Google Play"] { height: 44px; }
-.hero-badge img[alt="Get it on Google Play"] { height: 53px; }
-.cta-badge img[alt="Get it on Google Play"] { height: 53px; }
+.nav-badge img[alt="Get it on Google Play"] { height: 41.2px; }
+.hero-badge img[alt="Get it on Google Play"] { height: 49.5px; }
+.cta-badge img[alt="Get it on Google Play"] { height: 49.5px; }
 @media (max-width: 480px) {
-  .nav-badge img[alt="Get it on Google Play"] { height: 37px; }
+  .nav-badge img[alt="Get it on Google Play"] { height: 35px; }
 }
 /* End Google Play visible-size adjustment */
