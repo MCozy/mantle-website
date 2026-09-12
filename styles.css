@@ -401,3 +401,13 @@ em { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; color:
 .page-footer-links a { font-size: 0.8125rem; transition: color 0.2s; }
 .page-footer-links a:hover { color: #fff; }
 .page-footer-copy { font-size: 0.8125rem; }
+
+
+/* Google Play visible-size adjustment */
+.nav-badge img[alt="Get it on Google Play"] { height: 44px; }
+.hero-badge img[alt="Get it on Google Play"] { height: 53px; }
+.cta-badge img[alt="Get it on Google Play"] { height: 53px; }
+@media (max-width: 480px) {
+  .nav-badge img[alt="Get it on Google Play"] { height: 37px; }
+}
+/* End Google Play visible-size adjustment */
