@@ -403,11 +403,11 @@ em { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; color:
 .page-footer-copy { font-size: 0.8125rem; }
 
 
-/* Google Play visible-size adjustment */
-.nav-badge img[alt="Get it on Google Play"] { height: 41.2px; }
-.hero-badge img[alt="Get it on Google Play"] { height: 49.5px; }
-.cta-badge img[alt="Get it on Google Play"] { height: 49.5px; }
+/* Google Play badge sizing */
+.nav-badge img[alt="Get it on Google Play"] { height: 40px; }
+.hero-badge img[alt="Get it on Google Play"] { height: 48px; }
+.cta-badge img[alt="Get it on Google Play"] { height: 48px; }
 @media (max-width: 480px) {
-  .nav-badge img[alt="Get it on Google Play"] { height: 35px; }
+  .nav-badge img[alt="Get it on Google Play"] { height: 34px; }
 }
-/* End Google Play visible-size adjustment */
+/* End Google Play badge sizing */
